@@ -18,14 +18,15 @@ typedef struct s{
 
 int main(){
     int allNum;
-    cin >> allNum;//Ñ§Éú×ÜÊı
-    vector<student> vec_student;//¶ÔÏóÎªÑ§ÉúÀàµÄÈİÆ÷
+    cin >> allNum;//å­¦ç”Ÿæ€»æ•°
+    vector<student> vec_student;//å¯¹è±¡ä¸ºå­¦ç”Ÿç±»çš„å®¹å™¨
     while(allNum--){
         student stu;
         cin >> stu.name >> stu.ID >> stu.grade;
         vec_student.push_back(stu);
-    }//µ¼ÈëÑ§ÉúĞÅÏ¢
+    }//å¯¼å…¥å­¦ç”Ÿä¿¡æ¯
     
+    //æ‰¾å‡ºæœ€å¤§ç´¢å¼•å’Œæœ€å°ç´¢å¼•
     int min_position = 0, max_position = 0;
     for(int i = 1; i < vec_student.size(); i++){
         if(vec_student[i].grade < vec_student[min_position].grade)
