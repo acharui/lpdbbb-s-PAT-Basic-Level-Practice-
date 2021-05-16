@@ -1,3 +1,10 @@
+/***********************************************
+ > @Time       : 2021-5-16
+ > @Author     : lpdbbbb
+ > @File       : 1001.cpp
+ > @Software   : vscode
+ > @type       : pat practice
+************************************************/
 #include<iostream>
 
 int main(){
