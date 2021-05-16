@@ -6,31 +6,33 @@
  > @type       : pat practice
 ************************************************/
 #include<iostream>
+#include<vector>
 #include<cmath>
 using namespace std;
-int main()
-{
-	int n;
-    cin>>n;
-	int pre=2,cnt=0;
-	int j;
-	for(int i=2;i<=n;i++)
-	{
-        bool prime = true;
-        int b = sqrt(i);
-		for(j=2;j<=b;j++)
-		{
-			if(i%j==0){
+
+int main(){
+    int number;
+    cin >> number;
+    int pre=1, now, j;
+    int cnt = 0;
+    bool prime;
+    for(now = 2; now < number; now++){
+        prime = true;
+        for(j = 2; j <= sqrt(now); j++){
+            if(now % j == 0){
                 prime = false;
-                break;//²»ÊÇËØÊı¾ÍÌø³öÑ­»·
+                break;
             }  
-		}
-		if(prime == true)//¿¼ÂÇµ½iÊÇºÏÊıµÄÇé¿ö(j<sqrt(i))¡£Ö»ÓĞiÊÇËØÊıÊ±(j>sqrt(i))²ÅÄÜ½øÕâ¸öÀ¨ºÅ
-		{
-			if(i-pre == 2) cnt++;
-			pre=i;
-		}
-	}
-	cout<<cnt<<endl;
-	return 0;
- } 
+        }
+        if(prime == true){
+            if(now-pre == 2){
+               cnt++; 
+            }
+            pre = now;//preä¸ºä¸Šä¸€ä¸ªè´¨æ•°ï¼Œnowä¸ºå½“å‰ç´ æ•°
+        }
+    }
+    cout << cnt << endl;
+
+    system("pause");
+    return 0;
+}
