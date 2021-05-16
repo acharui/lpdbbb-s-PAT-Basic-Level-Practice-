@@ -1,3 +1,10 @@
+/***********************************************
+ > @Time       : 2021-5-17
+ > @Author     : lpdbbbb
+ > @File       : 1002.cpp
+ > @Software   : vscode
+ > @type       : pat practice
+************************************************/
 #include<iostream>
 #include<string>
 using std::cout;
