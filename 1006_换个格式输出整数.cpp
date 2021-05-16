@@ -1,3 +1,10 @@
+/***********************************************
+ > @Time       : 2021-5-17
+ > @Author     : lpdbbbb
+ > @File       : 1006.cpp
+ > @Software   : vscode
+ > @type       : pat practice
+************************************************/
 #include<iostream>
 using namespace std;
 
